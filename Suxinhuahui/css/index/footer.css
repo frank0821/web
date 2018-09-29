@@ -1,0 +1,68 @@
+footer {
+		height: 145px;
+		width: 100%;
+		background-color: rgb(245,245,245);
+		padding-top: 20px;
+		/*margin: 0 auto;*/
+}
+
+
+.weixin {
+	color: rgb(131,185,68);
+	font-size: 34px;
+	position: absolute;
+	margin: 4px 50%;
+	left: -76px;
+	z-index: 11;
+}
+
+.qq {
+	color: rgb(98,168,234);
+	font-size: 34px;
+	/*margin-left: -30px;*/
+	margin: 0 auto;
+	z-index: 11;
+}
+
+.email {
+	color: rgb(98,168,234);
+	font-size: 34px;
+	position: absolute;
+	margin: 6px 50%;
+	right: -70px;
+	z-index: 11;
+}
+
+
+footer > a:nth-child(6) {
+	font-size: 14px;
+	color: rgb(98,168,234);
+	
+}
+
+footer a:nth-child(7) {
+	font-size: 14px;
+	color: rgb(98,168,234);
+}
+
+
+
+footer p:nth-child(8) {
+	font-size: 14px;
+	color: rgb(170,170,170);
+	line-height: 32px;
+}
+
+
+footer p:nth-child(9) {
+	font-size: 14px;
+	color: rgb(170,170,170);
+}
+
+footer a:hover {
+	color: rgb(137,188,235);
+}
+
+footer a:nth-child(3):hover {
+	color: rgb(131,185,68);
+}

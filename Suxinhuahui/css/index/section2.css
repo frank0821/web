@@ -1,0 +1,121 @@
+.section2 {
+	height: 658px;
+	width: 100%;
+	background-color: rgb(245,245,245);
+	padding-top: 50px;
+}
+
+
+.section2 div h1 {
+	font-size: 36px;
+	font-weight: 300;
+	color: rgb(55,71,79);
+	display: inline-block;
+}
+
+
+.section2 div a {
+	display: inline-block;
+}
+
+
+.section2 div a h3 {
+	background-color: rgb(22,176,220);
+	color: white;
+	font-size: 10px;
+	margin-left: -58px;
+	/*display: inline-block;*/
+	font-weight: 400;
+	width: 52px;
+	height: 26px;
+	line-height: 30px;
+	margin-top: 28px;
+	float: left;
+	
+}
+
+
+#img-list {
+	width: 1300px;
+	height: 486px;
+	margin: 80px auto;
+	/*background-color: gray;*/
+}
+
+
+.img-block:nth-child(odd) {
+	transform: translateX(-300px);
+	opacity: 0;
+	transition: 0.5s;
+}
+
+
+.img-block:nth-child(even) {
+	transform: translateX(300px);
+	opacity: 0;
+	transition: 0.5s;
+}
+
+
+
+.img-block {
+	width: 635px;
+	height: 126px;
+	float: left;
+	margin-left: 15px;
+}
+
+
+.img-block > a > img {
+	width: 160px;
+	height: 96px;
+	border-radius: 5px;
+}
+
+
+.img-block > a {
+	float: left;
+}
+
+
+.img-title {
+	display: block;
+	float: left;
+	font-size: 18px;
+	margin-left: 16px;
+	margin-top: -4px;
+	color: black;
+}
+
+.img-title:hover {
+	color:rgb(22,175,218);
+	text-decoration: underline;
+}
+
+
+.img-text {
+	font-size: 14px;
+	display: block;
+	width: 440px;
+	height: 44px;
+	float: left;
+	text-align: left;
+	margin-left: 16px;
+	margin-top: 8px;
+	color: rgba(0,0,0,0.4);
+}
+
+
+.writer {
+	margin-left: 16px;
+	float: left;
+	font-size: 14px;
+	color:rgba(0,0,0,0.4) ;
+}
+
+
+.eye {
+	
+}
+
+

@@ -1,0 +1,101 @@
+section {
+	margin: 112px auto;
+	margin-bottom: 30px;
+	
+}
+
+
+section > div {
+	width: 1320px;
+	background-color: rgb(245,245,245);
+}
+
+
+
+.container {
+	height: auto;
+	width: 936px;
+	background-color: white;
+	border-bottom: solid;
+	border-color: rgb(240,242,245);
+	border-width: 1px;
+	float: left;
+	margin-left: 25px;
+	padding: 14px 14px 68px 14px;
+	position: relative;
+}
+
+
+.container > h1 {
+	font-size: 32px;
+	font-weight: normal;
+	padding: 10px;
+	text-align: left;
+	color: rgba(0,0,0,.6);
+	margin-left:10px ;
+}
+
+
+.container > .writer {
+	margin-left: 20px;
+	text-align: left;
+}
+
+.container > p {
+	margin-left: 20px;
+	text-align: left;
+	width: 912px;
+	line-height: 32px;
+	font-size: 18px;
+	color: rgb(0,0,0,0.5);
+}
+
+.container > p span {
+	font-size: 16px;
+	color: rgb(163,175,183);
+	width: auto;
+	height: auto;
+
+}
+
+.container > hr {
+	border-bottom: 1px rgb(240,242,245) solid;margin: 26px 10px;
+}
+
+.container > img {
+	margin: 14px auto;
+}
+
+#back {
+	font-size: 14px;
+	color: rgba(0,0,0,0.4);
+	padding: 8px;
+	border: 1px solid rgba(0,0,0,0.2);
+	position: absolute;
+	border-radius: 34px;
+	bottom: 30px;
+	left: 30px;
+	margin: 0;
+}
+
+#back:hover {
+	border-color: skyblue;
+	color: skyblue;
+}
+
+#next {
+	font-size: 14px;
+	color: rgba(0,0,0,0.4);
+	padding: 8px;
+	border: 1px solid rgba(0,0,0,0.2);
+	position: absolute;
+	border-radius: 34px;
+	bottom: 30px;
+	right: 30px;
+	margin: 0;
+}
+
+#next:hover {
+	border-color: skyblue;
+	color: skyblue;
+}

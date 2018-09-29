@@ -1,0 +1,279 @@
+.nav {
+	background-color: white;
+	border-bottom: lightgray solid 1px;
+	width: 100%;
+}
+
+.web-text2 {
+	color: black;
+}
+
+body {
+	background-color: rgb(245,245,245);
+}
+
+
+#title {
+	color: rgb(246,122,130);
+	font-size: 35px;
+	margin-top: 116px;
+}
+
+
+section {
+	margin: auto;
+	margin-top: 70px;
+	width: 1320px;
+	height: 100%;
+	display: block;
+}
+section:after{
+	content:"";
+	display: block;
+	width:0;
+	height:0;
+	line-height:0;
+	clear:both;
+}
+
+section > div {
+	background-color: white;
+	width: 990px;
+	height: 100%
+	margin: 0 auto;
+	float: left;
+	padding-bottom: 30px;
+}
+
+
+.container {
+	height: auto;
+	width: 936px;
+	background-color: white;
+	border-bottom: solid;
+	border-color: rgb(240,242,245);
+	border-width: 1px;
+	float: left;
+	margin-left: 25px;
+}
+
+
+section > div > .container > a > img {
+	width: 161px;
+	height: 161px;
+}
+
+section > div > .container > a{
+	display: block;
+	width: 161px;
+	height: 161px;
+	float: left;
+	background-color: white;
+	margin: 30px 0;
+}
+
+section > div > .container > div > a:nth-child(1) {
+	display: block;
+	font-size: 22px;
+	color: black;
+	float: left;
+	margin: 30px 0 0 24px;
+}
+
+
+section > div > .container > div > a:nth-child(1):hover {
+	color:rgb(22,175,218);
+	text-decoration: underline;
+}
+
+
+section > div >.container > div > div:nth-child(2) {
+	font-size: 16px;
+	color: rgb(175,141,150);
+	width: 748px;
+	height: auto;
+	margin: 20px 0 0 24px;
+	float: left;
+	text-align: left;
+}
+
+
+section > div > .container > div  p:nth-child(3) {
+	font-size: 16px;
+	color: rgb(163,175,183);
+	width: auto;
+	height: auto;
+	margin: 18px 0 30px 24px;
+	float: left;
+}
+
+
+section > div > .container > div {
+	float: left;
+	height: auto;
+	width: 765px;
+}
+
+
+
+.text-button > a:nth-child(1) {
+	display: block;
+	float: left;
+	width: 74px;
+	height: 39px;
+	color: rgb(204,213,219);
+	border: solid 1px rgba(204,213,219,0.3);
+	line-height: 39px;
+	margin-left: 360px;
+	margin-top: 30px;
+}
+
+
+.text-button > a:nth-child(5) {
+	display: block;
+	float: left;
+	width: 74px;
+	height: 39px;
+	color: rgba(0,0,0,0.5);
+	border: solid 1px rgba(204,213,219,0.3);
+	border-left: none;
+	line-height: 39px;
+	margin-top: 30px;
+}
+
+
+.text-button > a:nth-child(3) {
+	display: block;
+	float: left;
+	width: 40px;
+	height: 39px;
+	color: rgba(0,0,0,0.5);
+	border: solid 1px rgba(204,213,219,0.3);
+	border-left: none;
+	line-height: 39px;
+	margin-top: 30px;
+}
+
+.text-button > a:nth-child(3):hover {
+	background-color: rgb(245,245,245);
+}
+
+
+.text-button > a:nth-child(4):hover {
+	background-color: rgb(245,245,245);
+}
+
+
+.text-button > a:nth-child(5):hover {
+	background-color: rgb(245,245,245);
+}
+
+
+
+.text-button > a:nth-child(4) {
+	display: block;
+	float: left;
+	width: 40px;
+	height: 39px;
+	color: rgba(0,0,0,0.5);
+	border: solid 1px rgba(204,213,219,0.3);
+	border-left: none;
+	line-height: 39px;
+	margin-top: 30px;
+}
+
+
+.text-button > a:nth-child(2) {
+	display: block;
+	float: left;
+	width: 40px;
+	height: 39px;
+	color: white;
+	line-height: 39px;
+	background-color: rgb(248,104,103);
+	margin-top: 30px;
+}
+
+
+#search {
+	width: 298px;
+	height: 340px;
+	background-color: white;
+	padding-top: 18px;
+	float: right;
+	text-align: left;
+}
+
+
+#search > div {
+	width: 258px;
+	height: 36px;
+	border: solid 1px rgba(204,213,219,0.3);
+	border-radius: 20px;
+	margin: 0 auto;
+}
+
+.sousuo {
+	color: black;
+	font-size: 14px;
+	float: right;
+	margin-right: 14px;
+	line-height: 36px;
+	background: white;
+	font-weight: bold;
+}
+
+#search > div > input {
+	color: lightgray;
+	border: none;
+	line-height: 36px;
+	width: 216px;
+	height: 36px;
+	float: right;
+	text-align: left;
+}
+
+
+#search hr {
+	border-bottom: 1px solid rgba(204,213,219,0.3);
+	margin: 20px;
+}
+
+
+#search > span {
+	font-size: 18px;
+	margin-left: 20px;
+}
+
+
+#search > ul {
+	margin-top: 16px;
+	margin-left: 20px;
+	width: 258px;
+}
+
+
+#search > ul > li {
+	border: solid 1px rgba(204,213,219,0.3);
+	width: 100%;
+	height: 100%;
+}
+
+
+#search > ul > li > a {
+	display: block;
+	font-size: 15px;
+	color: black;
+	text-align: left;
+	margin: 10px 0 10px 18px;
+	
+}
+
+
+#search > a:last-child {
+	font-size: 16px;
+	margin-left: 20px;
+	color: black;
+}
+
+

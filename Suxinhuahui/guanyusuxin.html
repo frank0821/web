@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index/header.css"/>
+		<link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_799817_f3c5cvph1sd.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index/section3.css"/>
+		<title></title>
+	</head>
+	<body>
+		<!--header开始-->
+		<header>
+			<div class="nav">
+				<a href="#" id="suxinhuahui" ><img src="http://www.suxinhuahui.com/upload/201706/1497971419.png"/></a>
+				<div>
+					<a href="index.html" class="web-text" >网站首页</a>
+					<a href="huayanhuayu.html" class="web-text">花言花语</a>
+					<a href="suxindongtai.html" class="web-text">素馨动态</a>
+					<a href="#" class="web-text">淘宝商城</a>
+					<a href="suxinhuayi.html" class="web-text">素馨花艺</a>
+					<a href="liuyanjianyi.html" class="web-text">留言建议</a>
+					<a href="#" class="web-text" style="color: rgb(63,175,207);">关于素馨</a>
+				</div>
+			</div>
+			<img style="width: 100%" src="http://www.suxinhuahui.com/upload/201803/1519994559.JPG" alt="" / style="width: 1904px;">
+		</header>
+		<!--header结束-->
+		
+		
+		<!--section3开始-->
+		<section class="section3" style="height: 100%;padding: 0px 0 20px 0;">
+			<h6 style="margin-top: 82px;margin-bottom: 14px;">郑州素馨花卉有限公司由优秀的花艺、花卉设计师王亚楠于2017年成立。</h6>
+			<h6>经营范围：花卉、工艺品、饰品的销售；礼仪策划；花卉、苗木种植技术咨询。</h6>
+			<h6>前期以鲜花、花束的包装及零售为主，逐渐过渡到花艺培训、家庭园艺等花香生活的指导，以及与花卉相关的文学创作。</h6>
+			<h6>公司致力于将多彩花艺带入寻常人家，让对生活有着更高追求的人们享受温馨素雅的花香世界，力求将这种文化做到极致。</h6>
+			<h6>公司地址：郑州市 中牟县 育才巷 县直一初中家属院 1单元201室</h6>
+			<h6>联系电话：0371-62180519  15890062947</h6>
+			<h6>电子邮箱：office@suxinhuahui.com</h6>
+			<img src="http://api.map.baidu.com/staticimage?center=114.027032,34.728969&zoom=18&width=530&height=340&markers=114.027301,34.729236"/><br />
+			<hr style="margin-top: 60px;">
+		</section>
+		<!--section3结束-->
+		
+		<!--footer开始-->
+		<footer>
+			<a href="#" class="iconfont icon-qq qq"></a>
+			<a href="#" class="iconfont icon-email email"></a>
+			<a href="#" class="iconfont icon-weixin weixin"></a><br /><br />
+			<a href="#">豫ICP备17021305号</a>&nbsp;&nbsp;
+			<a href="#">
+				<img src="http://www.suxinhuahui.com/gonganbeian.png"/>
+				<span>豫公网安备 41012202000160号</span>
+			</a>
+			<p>联系电话 0371-62180519 15890062947</p>
+			<p>郑州素馨花卉有限公司 版权所有 © 2017-2021</p>
+		</footer>
+		<!--footer结束-->
+	</body>
+</html>
+
+<script type="text/javascript">
+	
+	let navs=document.querySelector(".nav")
+	let navwords=document.querySelectorAll(".nav>div>a")
+	
+	Navscroll(navs,navwords)
+	
+	function Navscroll(nav,navword)
+	{	
+		let navtop=nav.offsetTop
+		
+		window.onscroll=function(){
+			let bodytop=document.documentElement.scrollTop
+			
+			if(bodytop>1)
+			{
+				nav.style.background="white"
+				navword.forEach((val,index)=>{
+					if(index!=6) val.style.color="black"
+				})
+			}
+			else{
+				nav.style.background="rgba(0,0,0,0.2)"
+				navword.forEach((val,index)=>{
+					if(index!=6) val.style.color="white"
+				})
+			}
+		}
+	}
+	
+</script>

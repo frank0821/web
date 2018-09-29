@@ -1,0 +1,205 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: none;
+	text-align: center;
+	list-style: none;
+	text-decoration: none;
+}
+
+
+
+a {
+	text-decoration: none;
+}
+
+
+body {
+	width: 100%;
+}
+
+
+
+
+.web-text {
+	font-size: 14px;
+	color: white;
+}
+
+
+
+#bg-img {
+	display: block;
+	/*background-image: url(http://www.suxinhuahui.com/upload/201806/1530266110.JPG);*/
+	width: 100%;
+	height: 100%;
+	/*margin: 0 auto;*/
+	position: relative;
+	overflow: hidden;
+	
+}
+
+
+.header {
+	width: 100%;
+	height:1074px ;
+}
+
+
+header > #bg-img > img {
+	display: block;
+	width: 100%;
+	height: 1074px;
+	position: absolute;
+	top: 0;
+	/*left: 1903px;*/
+}
+
+
+header > a > span {
+	left: 0;
+	right: 0;
+	bottom: -40px;
+	font-size: 36px;
+	position: absolute;
+	color: rgb(189,165,237);
+	font-weight: lighter;
+
+} 
+
+header > a > span:nth-child(4){
+	color: white;
+}
+
+
+#bg-img > div {
+	
+	position: absolute;
+	bottom: 6px;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 14px;
+}
+
+
+
+#bg-img > div > div {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	/*background: rgba(255,255,255,.3);*/
+	background: rgba(0,0,0,.3);
+	margin: 6px;
+	z-index: 20;
+	cursor: pointer;
+}
+
+
+
+.nav {
+	height: 80px;
+	width: 100%;
+	/*float: left;*/
+	background-color: rgba(0,0,0,0.2);
+	position: relative;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	transition: 0.5s;
+	border: 1px solid rgba(0,0,0,.1);
+}
+
+
+
+
+#suxinhuahui {
+	/*display: inline-block;*/
+	margin-left: 302px;
+	line-height: 130px;
+	float: left;
+	
+}
+
+
+header>div >div {
+	/*display: inline-block;*/
+	line-height: 80px;
+	float: right;
+	margin-right: 297px;
+}
+
+header>div>div>a {
+	margin-left: 25px;
+}
+
+
+header>div >div>a:hover {
+	color: rgb(63,175,207);
+}
+
+
+.left-button {
+	display: block;
+	height: 1074px;
+	width: 285px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient(90deg,rgba(0,0,0,0) 70%,rgba(0,0,0,0));
+	z-index: 8;
+	cursor: pointer;
+}
+
+
+a.left-button .zuo1 {
+	color: rgba(255,255,255,0);
+	font-size: 24px;
+	float: left;
+	margin: 529px 130px;
+	
+}
+
+.left-button:hover {
+	background: linear-gradient(90deg,rgba(0,0,0,0.2) 50%,rgba(0,0,0,0));
+}
+
+
+.left-button:hover  .zuo1{
+	color: rgba(255,255,255,0.6);
+}
+
+
+
+.right-button {
+	display: block;
+	height: 1074px;
+	width: 285px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: linear-gradient(0deg,rgba(0,0,0,0) 50%,rgba(0,0,0,0));
+	z-index: 8;
+	cursor: pointer;
+}
+
+
+a.right-button .you1 {
+	color: rgba(255,255,255,0);
+	font-size: 24px;
+	float: right;
+	margin: 529px 130px;
+	
+}
+
+.right-button:hover {
+	background: linear-gradient(270deg,rgba(0,0,0,0.2) 50%,rgba(0,0,0,0));
+}
+
+
+.right-button:hover  .you1{
+	color: rgba(255,255,255,0.6);
+}

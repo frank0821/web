@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index/header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/huayanhuayu/huayanhuayu.css"/>
+		<link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_799817_f3c5cvph1sd.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/liuyanjianyi/liuyanjianyi.css"/>
+		<title></title>
+	</head>
+	<body>
+		<!--header开始-->
+		<header>
+			<div class="nav">
+				<div>
+					<a href="index.html" class="web-text web-text2">网站首页</a>
+					<a href="huayanhuayu.html" class="web-text web-text2" >花言花语</a>
+					<a href="suxindongtai.html" class="web-text web-text2" >素馨动态</a>
+					<a href="#" class="web-text web-text2">淘宝商城</a>
+					<a href="suxinhuayi.html" class="web-text web-text2">素馨花艺</a>
+					<a href="liuyanjianyi.html" class="web-text web-text2" style="color: rgb(63,175,207);">留言建议</a>
+					<a href="guanyusuxin.html" class="web-text web-text2">关于素馨</a>
+				</div>
+			</div>
+		</header>
+		<!--header关闭-->
+		
+		<!--标题开始-->
+		<div id="title">留言建议</div>
+		<!--标题结束-->
+		
+		<!--内容开始-->
+		<section>
+			<ul id="remark">
+				<li class="remark-container">
+					<div>
+						<div class="iconfont icon-icon-test user"></div>
+						<div class="float-text">
+							<div>张三</div>
+							<div>留言有点少</div>
+						</div>
+					</div>
+					
+					<div>2018-01-04 16:18:53</div>
+				</li>
+				
+				
+			</ul>
+			
+			<div class="user-remark">
+				<input type="text" name="" id="name" placeholder="姓名" />
+				<input type="text" name="" id="" placeholder="联系电话" />
+				<textarea name="" rows="10" cols="30" maxlength="100" placeholder="您的建议"></textarea>
+				<p>最多可输入 100 个字 , 还可以输入<span class="num"> 100 </span> 个字</p>
+				<div>
+					<input type="text" name="" id="" placeholder="验证码" />
+					<div id="yanzhengma">
+						<img src="http://www.suxinhuahui.com/member/ajax.php?action=code"/>
+					</div>
+				</div>
+				<button href="#">提交</button>
+			</div>
+		</section>
+		
+		
+		<!--footer开始-->
+		<footer>
+			<a href="#" class="iconfont icon-qq qq"></a>
+			<a href="#" class="iconfont icon-email email"></a>
+			<a href="#" class="iconfont icon-weixin weixin"></a><br /><br />
+			<a href="#">豫ICP备17021305号</a>&nbsp;&nbsp;
+			<a href="#">
+				<img src="http://www.suxinhuahui.com/gonganbeian.png"/>
+				<span>豫公网安备 41012202000160号</span>
+			</a>
+			<p>联系电话 0371-62180519 15890062947</p>
+			<p>郑州素馨花卉有限公司 版权所有 © 2017-2021</p>
+		</footer>
+		<!--footer结束-->
+	</body>
+</html>
+<script type="text/javascript">
+	let text=document.querySelector("textarea")
+	let input=document.querySelector("#name")
+	let num=document.querySelector(".num")
+	let ul=document.querySelector("#remark")
+	let btn=document.querySelector("button")
+	
+	console.log(text,input,num,ul,btn)
+	text.oninput=function(){
+		num.innerHTML=100-this.value.length
+	}
+	
+	btn.onclick=function(){
+		let date=new Date()
+		let years=date.getFullYear()
+		let months=date.getMonth()+1
+		let day=date.getDate()
+		let hours=date.getHours()
+		let minutes=date.getMinutes()
+		let seconds=date.getSeconds()
+		let dates=years+"-"+months+"-"+day+" "+hours+":"+minutes+":"+minutes
+		
+		console.log(input.value,text.value)
+		if(input.value=="") {alert("姓名不能为空");return}
+		if(text.value=="") {alert("内容不能为空");return}
+		let name=input.value;
+		let con=text.value;
+		
+		let str=`<li class="remark-container">
+					<div>
+						<div class="iconfont icon-icon-test user"></div>
+						<div class="float-text">
+							<div>${name}</div>
+							<div>${con}</div>
+						</div>
+					</div>
+					
+					<div>${dates}</div>
+				</li>`
+		ul.innerHTML+=str;
+		input.value=""
+		text.value=""
+		num.innerHTML=100
+	}
+	
+	ul.addEventListener("mouseover",function(event){
+		if(event.target.nodeName=="LI"&&event.target.classList.contains("list"))
+		event.target.style.background="rgb(243,247,249)"
+		
+	},false)
+		
+	
+	
+	ul.addEventListener("mouseout",function(event){
+		if(event.target.nodeName=="LI"&&event.target.classList.contains("list"))
+		event.target.style.background="white"
+		
+	},false)
+		
+	
+	
+</script>

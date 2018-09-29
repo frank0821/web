@@ -1,0 +1,209 @@
+.section1 {
+	width: 100%;
+	/* height: 726px; */
+	background-color: white;
+	/* padding-top: 44px; */
+	position: relative;
+}
+
+#first-block>h1 {
+	font-size: 36px;
+	font-weight: 300;
+	color: rgb(55,71,79);
+	display: inline-block;
+}
+
+
+#first-block>a {
+	display: inline-block;
+}
+
+
+.more {
+	font-size: 48px;
+	color: rgb(22,176,220);
+	/*display: inline-block;*/
+	float: left;	
+	margin-top: 20px;
+}
+
+.more2 {
+	font-size: 48px;
+	color: rgb(22,176,220);
+	/*display: inline-block;*/
+	margin-left: -30px;
+	float: left;
+	margin-top: 20px;
+	
+}
+
+#first-block>a>h3 {
+	background-color: rgb(22,176,220);
+	color: white;
+	font-size: 10px;
+	margin-left: -58px;
+	/*display: inline-block;*/
+	font-weight: 400;
+	width: 52px;
+	height: 26px;
+	line-height: 30px;
+	margin-top: 28px;
+	float: left;
+	
+}
+
+#first-block>a:hover h2 {
+	color: rgb(12,154,194);
+}
+
+#first-block>a:hover h3{
+	background-color: rgb(12,154,194);
+}
+
+
+#first-block{
+	height: 36px;
+	line-height: 36px;
+}
+
+#first-block>p {
+	font-size: 16px;
+	color: rgb(162,166,170);
+	
+}
+
+
+/* #banner-window {
+	position: relative;
+	width: 1191px;
+	height: 540px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	margin: 112px auto;
+} */
+
+
+
+#second-block {
+	/*width: 1256px;*/
+	height: 540px;
+	position: absolute;
+	left: 1191px;
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	/* transition: 0.5s; */
+	background: white;
+}
+
+
+#second-block>div{
+	width: 397px;
+	height: 540px;
+	/* float: left; */
+}
+
+
+.circle {
+	width: 369px;
+	height: 369px;
+	border-radius: 50%;
+	
+}
+
+
+.banner-title {
+	font-size: 19px;
+	color: rgb(55,71,79);
+	font-weight: 400;
+	margin-top: 4px;
+}
+
+
+.banner-text {
+	color: rgba(0,0,0,0.6);
+	width: 366px;
+	height: 34px;
+	text-align: left;
+	margin: 0 auto;
+	margin-top: -8px;
+	padding-top:20px ;
+	line-height: 22px;
+}
+
+
+.button {
+	width: 366px;
+	height: 37px;
+	background-color: rgb(249,104,104);
+	margin: auto;
+	margin-top: 2px;
+	transition: 0.4s;
+	display: block;
+}
+
+
+.video {
+	color: rgb(156,33,21);
+	margin-top:10px ;
+}
+
+
+.button>span {
+	line-height: 37px;
+	margin:0 6px;
+}
+
+.button:hover {
+	background-color: rgb(250,122,122);
+}
+
+
+.zuo {
+	font-size: 32px;
+	color: lightgray;
+	line-height: 770px;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left:300px;
+	z-index: 40;
+}
+
+
+.you {
+	font-size: 32px;
+	color: lightgray;
+	line-height: 770px;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 300px;
+	z-index: 40;
+}
+
+
+.title {
+    transform: translateY(-60px);
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.swiper-container {
+	width: 1200px;
+	height: 768px;
+}
+
+
+.swiper-wrapper {
+	width: 1000px;
+	height: 400px;
+	margin-top: 110px;
+}
+
+/* .swiper-slide>div {
+	width: 300px;
+} */
