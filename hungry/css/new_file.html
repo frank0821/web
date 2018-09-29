@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	    body{
+	    	background: #333;
+	    }
+		div{
+			width: 500px;
+			height: 300px;
+			background: #fff;
+			font-size: 30px;
+			color: #333;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
+			text-align: center;
+			line-height: 300px;
+			border-radius: 10px;
+		}
+		span{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+    <div><span>5</span>秒后关闭页面</div>
+</body>
+</html>
+<script type="text/javascript">
+	//1、获取元素，[0]表示第几个span
+	let spans=document.getElementsByTagName('span')[0];
+	let num=spans.innerHTML;
+	// 
+	// console.log(num);
+	let t=window.setInterval(change,1000)
+	function change(){
+		num--;
+		if(num==0){
+			clearInterval(t);
+			window.close();
+		}
+		spans.innerHTML=num;
+	}
+</script>
+

@@ -1,0 +1,292 @@
+body {
+	background: rgb(245,245,245);
+}
+
+
+#information-title {
+	width: 100%;
+	height: 3.5rem;
+	background-image: linear-gradient(-90deg, #306efb 0%, #358ffb 38%, #39b0fb 100%);
+	display: flex;
+	justify-content: space-between;
+	padding: 0.3rem;
+	/*position: fixed;*/
+	z-index: 0;
+}
+
+
+#information-title > a >img:first-child {
+	width: 0.28rem;
+	height: 0.33rem;
+}
+
+
+#information-title > a >img:last-child {
+	width: 0.31rem;
+	height: 0.32rem;
+}
+
+
+#information-title > h1 {
+	font-size: 0.3rem;
+	color: #ffffff;
+}
+
+
+
+
+
+
+#content {
+	padding: 0.24rem 0.24rem 0.24rem 0.24rem;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 0.66rem;
+	left: 0;
+	right: 0;
+	margin-bottom: 0.8rem;
+}
+
+
+#head-position {
+	width: 100%;
+	height: auto;
+	background-color: #ffffff;
+	box-shadow: 0rem 0.02rem 0.06rem 0rem rgba(119, 116, 116, 0.35);
+	border-radius: 0.15rem;
+	padding: 0.24rem;
+}
+
+
+#head-position:after {
+	content: "";
+	display: block;
+	clear:both
+}
+
+
+#head-position > a {
+	display: block;
+	float: left;
+}
+
+
+#head-position > a > img {
+	display: block;
+	width: 1rem;
+	height: 1.14rem;
+}
+
+
+
+
+#id-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: calc(100% - 1.32rem);
+	height: 1rem;
+	float: right;
+	margin: 0.1rem 0;
+}
+
+
+#id-card > li:first-child {
+	font-size: 0.28rem;
+	color: #39aefb;
+}
+
+
+
+#id-card > li:nth-child(2) {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+
+#id-card > li:nth-child(2) > img {
+	width: 1.3rem;
+	height: 0.21rem;
+	/*float: left;*/
+	display: block;
+}
+
+
+#id-card > li:nth-child(2) > span {
+	font-size: 0.14rem;
+	color: #ffffff;
+	/*width: 0.46rem;
+	height: 0.2rem;*/
+	background-color: gold;
+	box-shadow: 0rem 0.02rem 0.03rem 0rem rgba(57, 174, 251, 0.35);
+	border-radius: 0.15rem;
+	display: block;
+	/*text-align: center;
+	line-height: 0.2rem;*/
+	margin-left: 0.2rem;
+	padding: 0.02rem 0.06rem;
+}
+
+
+#id-card > li:nth-child(3) > img {
+	width: 0.18rem;
+	height: 0.24rem;
+	float: left;
+}
+
+
+#id-card > li:nth-child(3) > span {
+	font-size: 0.18rem;
+	color: #000000;
+	opacity: 0.6;
+	float: left;
+	margin-left: 0.1rem;
+	/*line-height: 0.18rem;*/
+}
+
+
+#id-container {
+	width: 100%;
+	height: auto;
+	background-color: #ffffff;
+	box-shadow: 0rem 0.02rem 0.06rem 0rem rgba(119, 116, 116, 0.35);
+	border-radius: 0.15rem;
+	padding: 0.2rem;
+	display: flex;
+	justify-content: space-between;
+	margin: 0.24rem auto;
+}
+
+
+
+#id-container > a {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 0.8rem;
+	height: auto;
+	line-height: 0.45rem;
+	align-items: center;
+	margin: auto 0.2rem;
+}
+
+
+#id-container > a > span:first-child {
+	font-size: 0.28rem;
+	color: #ff1111;
+	
+}
+
+#id-container > a > span:nth-child(2) {
+	font-size: 0.18rem;
+	color: #000000;
+	opacity: 0.4;
+}
+
+
+#id-container > a > img {
+	width: 0.32rem;
+	height: 0.32rem;
+}
+
+
+#id-container > a > span:last-child {
+	font-size: 0.2rem;
+	color: #000000;
+	opacity: 0.6;
+}
+
+
+
+#id-other {
+	width: 100%;
+	height: auto;
+	background-color: #ffffff;
+	box-shadow: 0rem 0.02rem 0.06rem 0rem rgba(119, 116, 116, 0.35);
+	border-radius: 0.15rem;
+	padding: 0,0.24rem 0 0.24rem;
+	margin: 0.24rem auto;
+	display: block;
+}
+
+
+#id-other > a {
+	display: block;
+	margin: auto 0.24rem;
+	padding: 0.24rem 0 0.24rem 0;
+	width: 92%;
+	border-bottom: 0.01rem solid rgba(245,245,245,1);
+	display: flex;
+	align-items: center;
+	/*justify-content: space-around;*/
+}
+
+
+#id-other > a > img {
+	width: 0.53rem;
+	height: 0.52rem;
+}
+
+
+#id-other > a > span {
+	font-size: 0.2rem;
+	color: #000000;
+	opacity: 0.6;
+	margin-left: 0.1rem;
+}
+
+
+
+
+
+
+
+#order-nav {
+	padding: 0 0.46rem;
+	width: 100%;
+	height: 0.98rem;
+	background-color: #ffffff;
+	z-index: 10;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items:center;
+	
+}
+
+
+#order-nav > li {
+	width: auto;
+	height: auto;
+}
+
+
+#order-nav > li > a >img {
+	margin-left: 0.01rem;
+	width: 0.44rem;
+	height: 0.4rem;
+	/*box-shadow: 0rem 0.02rem 0.04rem 0rem rgba(92, 125, 247, 0.4);*/
+}
+
+#order-nav > li > a >span {
+	font-size: 0.18rem;
+	color: rgba(0,0,0,.6);
+	display: block;
+	text-align: center;	
+	margin-top: 0.06rem;
+}
+
+
+#order-nav > li:nth-child(4) > a > span {
+	font-size: 0.18rem;
+	color: #4268f6;
+	display: block;
+	text-align: center;	
+	margin-top: 0.06rem;
+}
