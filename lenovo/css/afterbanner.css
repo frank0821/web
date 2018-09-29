@@ -1,0 +1,44 @@
+.afterbanner {
+	height: 90px;
+	background-color: white;
+	margin: 0 auto;
+}
+
+.afterbannerwords {
+	display: inline-block;
+	color: rgba(0,0,0,0.6);
+	margin-left: 6px;
+	margin-right: 6px;
+	/*line-height: 10px;*/
+	font-weight: normal;
+	font-size: 12px;
+	
+}
+
+.afterbannericon {
+	color: rgba(0,0,0,0.5);
+	font-size: 30px;
+}
+
+.littleblock {
+	width: 80px;
+	height: 90px;
+	margin: 14px 20px 0px 20px;
+	display: inline-block;
+	text-align: center;
+}
+
+.smallafterbanner {
+	width: 1200px;
+	height: 90px;
+	margin: 0 auto;
+	text-align: center;
+	border:0;
+	border-bottom-width: 1px;
+	border-bottom-color: rgba(0,0,0,0.4);
+	border-style: solid;
+}
+
+.littleblock:hover .afterbannericon {
+	color: red;
+}

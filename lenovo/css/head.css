@@ -1,0 +1,73 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+@import:("nav.css");
+
+body {
+	width: 100%;
+	background-color: rgb(245,245,245);
+}
+
+.tm {
+	width: 61px;
+	height: 181px;	
+	position: fixed;
+	z-index: 100;
+}
+
+
+
+.tm1 {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	z-index: 100;
+}
+
+
+
+a {
+
+	text-decoration: none;
+}
+
+.head {
+	width: 100%;
+	height: 35px;
+	background-color: rgb(68,68,68); 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.headfont {
+	display: inline-block;
+	color: lightgray;
+	margin-left: 12px;
+	line-height: 35px;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+
+
+.headfont:hover {
+	color: white;
+}
+
+.head >a:last-child  {
+	display: block;
+	margin-right: 815px;
+	margin-left: 86px;
+}
+
+
+input::-webkit-input-placeholder {
+	color:rgba(255,255,255,0.6)
+}

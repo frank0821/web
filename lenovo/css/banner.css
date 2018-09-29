@@ -1,0 +1,258 @@
+section {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+
+
+
+
+.banner {
+	width: 1920px;
+	height: 408px;
+	margin:0 auto;
+	/*background-repeat:no-repeat;*/
+	position: relative;
+	
+}
+
+
+.lunbo {
+	width: 100%;
+	position: relative;
+	height: 100%;
+	margin:0 auto;
+	
+}
+
+
+.lunbo > a {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	transition: all 0.5s;
+	opacity: 0;
+}
+
+
+.lunbo > a >img {
+	width: 100%;
+	height: 100%;
+}
+
+
+
+.firstlist {
+	list-style: none;
+	margin-left: 350px;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	z-index: 20;
+}
+
+.listinner {
+	width: 190px;
+	border:0;
+	border-style: solid;
+	border-bottom-width: 1px;
+	border-color: lightgray;
+	background-color: rgb(255,255,255);
+	line-height: 50px;
+	padding-left: 20px;
+/*	color: black;*/
+	font-size: 15px;
+	/*position: relative;*/
+}
+
+.listwords {
+	color: black;
+}
+
+.lefticon {
+	float: right;
+	font-size: 10px;
+	margin-right: 8px;
+	color: black;
+}
+
+.listinner:hover .listwords {
+	color: rgb(226,35,26);
+	background-color: rgb(247,247,247);
+}
+
+.listinner:hover {
+	background-color: rgb(247,247,247);
+}
+
+.listinner:hover .lefticon {
+	background-color: rgb(247,247,247);
+}
+
+
+.listinner > div {
+	position: absolute;
+	top: 0;
+	left: 190px;
+	background: rgb(247,247,247);
+	width: 1010px;
+	height: 408px;
+	display: none;
+	justify-content: space-around;
+	align-items: center;
+	z-index: 15;
+	line-height: 0;
+}
+
+
+.banner-list {
+	width: 630px;
+	height: 360px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	line-height: 0;
+	padding-top: 16px;
+	margin-left: 20px;
+}
+
+.banner-list > li{
+	height: 45px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+
+.banner-list > li >a {
+	font-size: 14px;
+	color: black;
+	line-height: 16px;
+	display: block;
+	height: 17px;
+}
+
+
+.banner-list > li >a:hover {
+	color: red;
+}
+
+.banner-list > li > div {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border-bottom:1px solid rgba(0,0,0,0.1) ;
+	width: 575px;
+	margin-left: 60px;
+	height: 31px;
+	line-height: 0;
+}
+
+.banner-list > li > div > span {
+	font-size: 12px;
+	line-height: 16px;
+	display: block;
+	height: 16px;
+	color: rgba(0,0,0,0.1);
+}
+
+.banner-list > li > div > a {
+	font-size: 12px;
+	color: black;
+	display: block;
+	height: 16px;
+	line-height: 16px;
+	margin: 0 12px;
+}
+
+.banner-list > li > div > a:hover {
+	color: red;
+}
+
+
+.listinner > div > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.listinner > div > div > a > img {
+	width: 252px;
+	height: 160px;
+	margin-bottom: 10px;
+}
+
+
+.left {
+	width: 32px;
+	height: 70px;
+	background-color: rgba(0,0,0,0);
+	/*float: left;*/
+	font-size: 30px;
+	color: rgba(255,255,255,0);
+	margin-top: 169px;
+	padding-left: 8px;
+	line-height: 70px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.right {
+	width: 32px;
+	height: 70px;
+	background-color: rgba(0,0,0,0);
+	float: right;
+	font-size: 30px;
+	color: rgba(255,255,255,0);
+	margin-top: 169px;
+	padding-left: 4px;
+	line-height: 70px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.banner:hover .left {
+	background-color: rgba(0,0,0,0.4);
+	color: rgba(255,255,255,0.8);
+}
+
+.banner:hover .right {
+	background-color: rgba(0,0,0,0.4);
+	color: rgba(255,255,255,0.8);
+}
+
+
+.circle > div {
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	background: rgba(0,0,0,0.6);
+	margin: 0 6px;	
+	cursor: pointer;
+}
+
+
+.circle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 34px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 10;
+	padding: 6px;
+}

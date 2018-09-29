@@ -1,0 +1,107 @@
+.floatlist1{
+	width: 50px;
+	height: 250px;
+	position: fixed;
+	top: 350px;
+	/*left: 290px;*/
+	right: 800px;
+	text-align: center;
+	z-index: 100;
+	display: none;
+	
+}
+
+
+.floatlist1 > li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.floatwords1{
+	font-size: 12px;
+	height: 36px;
+	line-height: 36px;
+	color: black;
+	cursor: pointer;
+}
+
+
+.floatlist2 {
+	position: fixed;
+	top: 150px;
+	right: 10px;
+	text-align: center;
+	z-index: 100;
+	display: none;
+}
+
+
+.rightlistinner {
+	width: 44px;
+	background-color: white;
+	margin: 1px;
+
+}
+
+
+
+.floatwords2{
+	font-size: 13px;
+	color: rgb(142,42,42);
+	display: block;
+	padding-bottom: 4px;
+	font-weight: bold;
+}
+
+
+.floatwords2:hover {
+	color: rgb(142,42,42);
+}
+
+
+.floaticon {
+	font-size: 24px;
+	color: rgb(42,42,42);
+	display: block;
+	font-weight: lighter;
+	padding-top: 4px;
+}
+
+
+.up {
+	font-size: 14px;
+	background-color:rgb(212,212,212);
+	font-weight: lighter;
+	color: white;
+	margin: 2px 0 1px 0;
+}
+
+
+.rightlistinner:hover .floaticon {
+	color: rgb(255,32,32);
+}
+
+
+.rightlistinner:hover a.floatwords2 {
+	color: rgb(255,32,32);
+}
+
+
+.up:hover {
+	color: rgb(255,32,32);
+}
+
+
+.left-active {
+	font-size: 13px;
+	color: deepskyblue;
+	display: block;
+	padding-bottom: 4px;
+	width: 30px;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+}
