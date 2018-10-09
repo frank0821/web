@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/base.css">
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/echarts.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript">
+		document.addEventListener('plusready', function(){
+			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/FourthPage1.css"/>
+	<style>
+		.blue {
+			width: 10px;
+			height: 5px;
+			background-color: #30a2fe;
+			box-shadow: 0px 2px 5px 0px 
+				rgba(68, 181, 255, 0.43);
+			border-radius: 3px;
+		}
+		.green {
+			width: 10px;
+			height: 5px;
+			background-color: #37e06f;
+			box-shadow: 0px 2px 5px 0px 
+				rgba(68, 181, 255, 0.43);
+			border-radius: 3px;
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<table>
+		<tr class="same-tr1">
+			<td>店铺管理</td>
+			<td><div></div></td>
+			<td>店铺信息</td>
+		</tr>
+		
+		<tr class="tr3">
+			<td>
+			<table class="table1">
+				<tr class="tr3-title">
+					<th class="green"></th>
+					<th><b>基本</b>信息</th>
+				</tr>
+				
+				<tr class="tr3-type">
+					<td>公司名称:&nbsp;</td>
+					<td> 
+						<p>王卓生活用品有限公司</p>
+					</td>
+				</tr>
+				
+				<tr class="tr3-name">
+					<td>*店铺名称:&nbsp;</td>
+					<td>
+						<input type="text" value="洗衣旗舰店">
+					</td>
+				</tr>
+				
+				<tr class="tr3-key">
+					<td>*店铺关键字:&nbsp;</td>
+					<td>
+						<input type="text" value="洗衣,洗鞋,洗家纺,洗窗帘,袋洗">
+					</td>
+				</tr>
+				
+				<tr class="tr3-round">
+					<td>*经营范围:&nbsp;</td>
+					<td>
+						<input type="text" value="衣服,鞋类,窗帘洗护">
+					</td>
+				</tr>
+				
+				<tr class="tr3-ad">
+					<td>店铺公告:&nbsp;</td>
+					<td>
+						<textarea name="" id="" cols="30" rows="10" value="">店铺新开张,2018.5.20-2018.2.23所有商品打8折</textarea>
+					</td>
+				</tr>
+				
+				<tr class="tr3-discrip">
+					<td>店铺简介:&nbsp;</td>
+					<td>
+						<textarea name="" id="" cols="30" rows="10" value="">灯具千种热销款式,厂家一站式供货,自由退换货,专业人士上门安装,服务到家</textarea>
+					</td>
+				</tr>
+				
+				
+				<tr class="tr3-img">
+					<td>*营业执照:&nbsp;</td>
+					<td>
+						<div>
+							<img src="img/certificates.png" alt="">
+						</div>
+						<div>
+							<input id="file1" type="file" placeholder="">
+							<span>请上传营业执照</span>
+						</div>
+					</td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+		
+		<tr class="tr4">
+			<td>
+			<table class="table2">
+				<tr class="tr3-title">
+					<th class="green"></th>
+					<th><b>联系</b>方式</th>
+				</tr>
+				
+				<tr class="tr4-phone">
+					<td>*联系方式:&nbsp;</td>
+					<td>
+						<input type="text" value="13567890765">
+					</td>
+				</tr>
+				
+				<tr class="tr4-city">
+					<td>*所在城市:&nbsp;</td>
+					<td>
+						<select>
+							<option value ="">太原</option>
+						</select>
+					</td>
+				</tr>
+				
+				<tr class="tr4-place">
+					<td>*所在区/县:&nbsp;</td>
+					<td>
+						<select>
+							<option value ="">小店区</option>
+						</select>
+					</td>
+				</tr>
+				
+				<tr class="tr4-locat">
+					<td>*详细地址:&nbsp;</td>
+					<td>
+						<input type="text" value="东北旺东路4号泰山大厦">
+					</td>
+				</tr>
+				
+			</table>
+			</td>
+		</tr>
+		
+		<tr class="tr5">
+			<td class="tr3-title">
+				<div class="green"></div>
+				<div><b>审核</b>状态</div>
+			</td>
+			
+			<td class="judge">
+				<h6>审核状态&nbsp;&nbsp;</h6>
+				<div>
+					<p>资料审核完成,店铺申请成功</p>
+				</div>
+			</td>
+			
+			<td class="warn">
+				<i>注意&nbsp;&nbsp;</i>
+				<div>
+					<span>修改提交后,会重新审核,请慎重填写提交,如需更改入驻信息,请点击更改按钮</span>
+					<a type="a" class="btn btn-success">更改入驻信息</a>
+				</div>
+			</td>
+		</tr>
+		
+		<tr class="tr6">
+			<td>
+				<a class="btn btn-success">提交</a>
+				<a class="btn btn-danger">取消</a>
+			</td>
+		</tr>
+		
+		<tr class="tr7"><td>©2015-2018 dscmail.cn  版权所有ICP备案号: DSC00000249 POWERED</td></tr>
+	</table>
+	
+	
+	
+</body>
+</html>
+<script>
+	
+	$(".num img").click(function(){
+		$(this).css("z-index","-1").siblings().css("z-index","10")
+	})
+	
+	$(".sell img").click(function(){
+		$(this).css("z-index","-1").siblings().css("z-index","10")
+	})
+	
+	$(".tr6 td:last-child div:last-child .btns").click(function(){
+		$(this).addClass("btn-active").siblings().removeClass("btn-active")
+	})
+	
+	
+</script>

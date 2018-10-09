@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/base.css">
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/echarts.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript">
+			document.addEventListener('plusready', function(){
+				//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+			});
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/SecondPage1.css"/>
+		<style>
+			.blue {
+				width: 10px;
+				height: 5px;
+				background-color: #30a2fe;
+				box-shadow: 0px 2px 5px 0px 
+					rgba(68, 181, 255, 0.43);
+				border-radius: 3px;
+			}
+			.green {
+				width: 10px;
+				height: 5px;
+				background-color: #37e06f;
+				box-shadow: 0px 2px 5px 0px 
+					rgba(68, 181, 255, 0.43);
+				border-radius: 3px;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		
+		
+		
+		
+		<!-- 第三页开始 -->
+		<table class="position list3">
+			<tr class="same-tr1">
+				<td>商品管理</td>
+				<td><div></div></td>
+				<td>商品列表</td>
+				<td><div></div></td>
+				<td>添加商品</td>
+			</tr>
+			
+			<tr class="same-tr2">
+				<td><img src="img/蓝色分类.png" alt=""></td>
+				<td><img src="img/蓝色填写.png" alt=""></td>
+				<td><img src="img/灰色关联.png" alt=""></td>
+			</tr>
+			
+			<tr class="tr3">
+				<td>
+				<table class="table1">
+					<tr class="tr3-title">
+						<th class="green"></th>
+						<th>基本信息</th>
+					</tr>
+					
+					<tr class="tr3-type">
+						<td>商品分类:&nbsp;</td>
+						<td> 
+							<p>洗衣></p>
+							<p>羽绒服清洗</p>
+						</td>
+						<td><img src="img/修改.png" alt=""></td>
+					</tr>
+					
+					<tr class="tr3-num">
+						<td>商品货号:&nbsp;</td>
+						<td>
+							<input type="text">
+							<span>商家货号是指商家管理商品的编号,买家不可见,最多可输入20个字符,直接输入中文,字母,数字, _ , /和小数</span>
+						</td>
+					</tr>
+					
+					<tr class="tr3-name">
+						<td>商品名称:&nbsp;</td>
+						<td>
+							<input type="text">
+							<span>商品标题名称长度至少1个字符,最长150个汉字</span>
+						</td>
+					</tr>
+					
+					<tr class="tr3-discrip">
+						<td>商品简单描述:&nbsp;</td>
+						<td>
+							<textarea name="" id="" cols="30" rows="10"></textarea>
+						</td>
+					</tr>
+					
+					<tr class="tr3-price">
+						<td>价格:&nbsp;</td>
+						<td>
+							<input type="text">
+							<span>价格必须是0.01-99999999之间的数字,且不能高于市场价,此价格为商品实际销售价格,如果商品存在规格,该价格显示最低价格</span>
+						</td>
+					</tr>
+					
+					<tr class="tr3-discount">
+						<td>折扣价:&nbsp;</td>
+						<td>
+							<input type="text">
+						</td>
+					</tr>
+					
+					<tr class="tr3-img">
+						<td>上传商品图片:&nbsp;</td>
+						<td>
+							<input id="file1" type="file" placeholder="">
+							<span>上传图片</span>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			
+			<tr class="tr4">
+				<td>
+				<table class="table2">
+					<tr class="tr3-title">
+						<th class="green"></th>
+						<th>基本信息</th>
+					</tr>
+					
+					<tr class="tr3-type">
+						<td>基本要求:&nbsp;</td>
+						<td> 
+							<p>手机详情总体大小:图片+文字不超过20张,文字不超过5000字&nbsp;<b>建议:</b>所有图片都是本宝贝相关的图片</p>
+						</td>
+					</tr>
+					
+					<tr class="tr3-type">
+						<td>图片要求:&nbsp;</td>
+						<td> 
+							<p>1. 建议使用宽度480-620像素,高度小于等于960像素图片.&nbsp;2. 格式为JPG/GIG/PNG</p>
+							<p><b>举例:&nbsp;</b>可以上传一张宽度为480,高度为960像素,格式为JPG的图片</p>
+						</td>
+					</tr>
+					
+					<tr class="tr3-type">
+						<td>文字要求:&nbsp;</td>
+						<td> 
+							<p>1. 每次插入文字不能超过500个字,标点,特殊字符按照一个字计算.&nbsp;2. 请手动输入文字,不要复制粘贴网页上的文字,防止出现乱码.&nbsp;3. 一些特殊字符会被替换为空.&nbsp;<b>建议:</b>不要添加太多的文字,这样看起来更清晰</p>
+						</td>
+					</tr>
+					
+					<tr class="tr4-img">
+						<td><input id="file2" type="file" placeholder="添加详情图片可批量添加"></td>
+					</tr>
+					
+					<tr class="tr4-discrip">
+						<td>文字描述:&nbsp;</td>
+						<td><input type="text" name="" id="" value="" /></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			
+			<tr class="tr5">
+				<td class="tr3-title">
+					<div class="green"></div>
+					<div>基本信息</div>
+				</td>
+				<td class="forsell">
+					<h6>上架:&nbsp;</h6>
+					<div class="sell">
+						<img src="img/绿正确.png" alt="">
+						<img src="img/灰错误.png" alt="">
+					</div>
+				</td>
+				<td class="forkey">
+					<h6>商品关键词:&nbsp;</h6>
+					<div>
+						<input type="text">
+						<span>商品关键词请用空格分隔</span>
+					</div>
+				</td>
+			</tr>
+			
+			<tr class="tr6">
+				<td>
+					<a href="SecondPage1a.html" class="btn btn-primary">上一步,选择商品分类</a>
+					<a href="SecondPage1c.html" class="btn btn-primary">下一步,选择商品关联</a>
+				</td>
+			</tr>
+			
+			<tr class="tr7"><td>©2015-2018 dscmail.cn  版权所有ICP备案号: DSC00000249 POWERED</td></tr>
+		</table>
+		<!-- 第三页结束 -->
+		
+		
+		
+	</body>
+</html>
+<script>
+	
+	$(".num img").click(function(){
+		$(this).css("z-index","-1").siblings().css("z-index","10")
+	})
+	
+	$(".sell img").click(function(){
+		$(this).css("z-index","-1").siblings().css("z-index","10")
+	})
+	
+	$(".tr6 td:last-child div:last-child .btns").click(function(){
+		$(this).addClass("btn-active").siblings().removeClass("btn-active")
+	})
+	console.log($(".list4 .tr5 .btn:first-child"))
+		
+</script>

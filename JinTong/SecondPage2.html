@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/base.css">
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/echarts.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript">
+		document.addEventListener('plusready', function(){
+			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/SecondPage2.css"/>
+	<style>
+		.blue {
+			width: 10px;
+			height: 5px;
+			background-color: #30a2fe;
+			box-shadow: 0px 2px 5px 0px 
+				rgba(68, 181, 255, 0.43);
+			border-radius: 3px;
+		}
+		.green {
+			width: 10px;
+			height: 5px;
+			background-color: #37e06f;
+			box-shadow: 0px 2px 5px 0px 
+				rgba(68, 181, 255, 0.43);
+			border-radius: 3px;
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<table>
+		<tr class="same-tr1">
+			<td>商品管理</td>
+			<td><div></div></td>
+			<td>分类管理</td>
+		</tr>
+	
+		<tr class="tr2">
+			<td>
+				<input type="text" placeholder="请输入关键字搜索">
+			</td>
+			
+			<td>
+				<img src="img/蓝搜索.png" alt="">
+			</td>
+			
+			<td><a class="btn btn-success">添加商品</a></td>
+			<td><a class="btn btn-primary">保存</a></td>
+		</tr>
+		
+		<tr class="tr4">
+			<td>
+			<table>
+				<tr>
+					<th>编号</th>
+					<th>商品类型名称</th>
+					<th>默认展开</th>
+					<th>创建时间</th>
+					<th>审核状态</th>
+					<th>操作</th>
+				</tr>
+				<tr>
+					<td class="num">
+						<div>
+							<img src="img/yes.png" alt="">
+							<img src="img/blank.png" alt="">
+						</div>
+						<span>001</span>
+					</td>
+					
+					<td class="name">
+						<div>
+							<h6>洗衣</h6>
+							<div>
+							<input type="text" placeholder="毛衣">
+							<div class="hides">
+								<input type="text">
+								<img src="img/add.png" alt="">
+							</div>
+						</div>
+						</div>
+						<img src="img/open.png" alt="">
+					</td>
+					
+					<td class="sell">
+						<img src="img/绿正确.png" alt="">
+						<img src="img/灰错误.png" alt="">
+					</td>
+					
+					<td class="time">2018-06-01 18:24</td>
+					
+					<td class="judge">审核通过</td>
+					<td class="control">
+						<img src="img/Garbage.png" alt="">
+					</td>
+				</tr>
+				<tr>
+					<td class="num">
+						<div>
+							<img src="img/yes.png" alt="">
+							<img src="img/blank.png" alt="">
+						</div>
+						<span>001</span>
+					</td>
+					
+					<td class="name">
+						<div>
+							<h6>洗衣</h6>
+							<div>
+							<input type="text" placeholder="毛衣">
+							<div class="hides">
+								<input type="text">
+								<img src="img/add.png" alt="">
+							</div>
+						</div>
+						</div>
+						<img src="img/open.png" alt="">
+					</td>
+					
+					<td class="sell">
+						<img src="img/绿正确.png" alt="">
+						<img src="img/灰错误.png" alt="">
+					</td>
+					
+					<td class="time">2018-06-01 18:24</td>
+					
+					<td class="judge">审核通过</td>
+					<td class="control">
+						<img src="img/Garbage.png" alt="">
+					</td>
+				</tr>
+			</table>
+			</td>
+		</tr>	
+			
+		<tr class="tr6">
+			<td>
+				<div>
+					<img src="img/All.png" alt="">
+					<span>全选</span>
+				</div>
+				<a class="btn btn-danger">批量删除</a>
+			</td>
+			
+			<td>
+				<div>
+					<div>
+						<i></i>总计<span>206</span>记录
+					</div>
+					<div>
+						<i></i>分<span>82</span>页
+					</div>
+					<div>
+						<i></i>每页<span>15</span>
+					</div>
+				</div>
+				<div>
+					<a class="btn btn-default">首页</a>
+					<a class="btns"><</a>
+					<a class="btns">1</a>
+					<a class="btns btn-active">2</a>
+					<a class="btns">3</a>
+					<a class="btns">4</a>
+					<a class="btns">5</a>
+					<a class="btns">></a>
+					<a class="btn btn-primary">末页</a>
+				</div>
+			</td>
+		</tr>
+		
+		<tr class="tr7"><td>©2015-2018 dscmail.cn  版权所有ICP备案号: DSC00000249 POWERED</td></tr>
+	</table>
+</body>
+</html>
+<script>
+	
+	$(".num img").click(function(){
+		$(this).css("z-index","-1").siblings().css("z-index","10")
+	})
+	
+	$(".sell img").click(function(){
+		$(this).css("z-index","-1").siblings().css("z-index","10")
+	})
+	
+	$(".name>img").click(function(){
+		if($(this).prev().children("div").css("display")=="none")
+		$(this).prev().children("div").css("display","block")
+		else $(this).prev().children("div").css("display","none")
+	})
+	
+	$(".tr6 td:last-child div:last-child .btns").click(function(){
+		$(this).addClass("btn-active").siblings().removeClass("btn-active")
+		console.log($(this).index())
+	})
+	
+</script>

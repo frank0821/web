@@ -1,0 +1,33 @@
+
+nav.fixed {
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top:0;
+	z-index: 10;
+}
+
+
+header.fixed {
+	width: calc(100% - 246px);
+	position: fixed;
+	left:246px;
+	top: 0;
+	z-index: 10;
+}
+
+
+
+iframe.fixed {
+	width: calc(100% - 246px);
+	margin-left: 246px;
+	margin-top: 80px;
+	/* z-index: 10; */
+}
+
+div.fixed {
+	width: calc(100% - 246px);
+	margin-left: 246px;
+	margin-top: 80px;
+	z-index: 10;
+}

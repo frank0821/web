@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/base.css">
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/echarts.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript">
+		document.addEventListener('plusready', function(){
+			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/FourthPage4a.css"/>
+	<style>
+		.blue {
+			width: 10px;
+			height: 5px;
+			background-color: #30a2fe;
+			box-shadow: 0px 2px 5px 0px 
+				rgba(68, 181, 255, 0.43);
+			border-radius: 3px;
+		}
+		.green {
+			width: 10px;
+			height: 5px;
+			background-color: #37e06f;
+			box-shadow: 0px 2px 5px 0px 
+				rgba(68, 181, 255, 0.43);
+			border-radius: 3px;
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<table>
+		<tr class="same-tr1">
+			<td>店铺管理</td>
+			<td><div></div></td>
+			<td>优惠券管理</td>
+			<td><div></div></td>
+			<td>添加优惠券</td>
+		</tr>
+		
+		<tr class="tr3-name">
+			<td>*优惠券名称&nbsp;</td>
+			<td>
+				<input type="text" placeholder="名称可输入20个字符,支持中文,字母,数字,符号">
+			</td>
+		</tr>
+		
+		<tr class="tr3-time">
+			<td>*有效时间段&nbsp;</td>
+			<td>
+				<input type="date" src="" />
+				<span>~</span>
+				<input type="date" src="" />
+			</td>
+		</tr>
+		<tr class="tr3-discount">
+			<td>*优惠金额&nbsp;</td>
+			<td>
+				<input type="text" >
+				<span>单位:元</span>
+			</td>
+		</tr>
+		
+		<tr class="tr3-price">
+			<td>*消费金额&nbsp;</td>
+			<td>
+				<input type="text" >
+				<span>单位:元(无门槛请设为0)</span>
+			</td>
+		</tr>
+		
+		<tr class="round">
+			<td>*使用范围&nbsp;</td>
+			<td>
+				<div class="num">
+					<div>
+						<img src="img/All.png" alt="">
+						<img src="img/circle.png" alt="">
+					</div>
+					<span>全部商品</span>
+				</div>
+				<div class="num">
+					<div>
+						<img src="img/All.png" alt="">
+						<img src="img/circle.png" alt="">
+					</div>
+					<span>指定商品</span>
+				</div>
+			</td>
+		</tr>
+		
+		<tr class="tr4">
+			<td></td>
+			
+			<td>
+				<div>
+					<ul>
+						<li class="num">
+							<h4>请选择第一级别</h4>
+						</li>
+						<li class="num">
+							<div>
+								<img src="img/All.png" alt="">
+								<img src="img/circle.png" alt="">
+							</div>
+							<span>水</span>
+						</li>
+						<li class="num">
+							<div>
+								<img src="img/All.png" alt="">
+								<img src="img/circle.png" alt="">
+							</div>
+							<span>卫浴</span>
+						</li>
+					</ul>
+				</div>
+			</td>
+			<td>-></td>
+			
+			<td>
+				<div>
+					<ul>
+						<li class="num">
+							<h4>请选择商品</h4>
+						</li>
+						<li class="num">
+							<div>
+								<img src="img/All.png" alt="">
+								<img src="img/circle.png" alt="">
+							</div>
+							<span>淋浴柜3423</span>
+						</li>
+						<li class="num">
+							<div>
+								<img src="img/All.png" alt="">
+								<img src="img/circle.png" alt="">
+							</div>
+							<span>晾衣架5624</span>
+						</li>
+						<li class="num">
+							<div>
+								<img src="img/All.png" alt="">
+								<img src="img/circle.png" alt="">
+							</div>
+							<span>晾花洒</span>
+						</li>
+						<li class="num">
+							<div>
+								<img src="img/All.png" alt="">
+								<img src="img/circle.png" alt="">
+							</div>
+							<span>坐便器</span>
+						</li>
+						<li class="num">
+							<div>
+								<img src="img/All.png" alt="">
+								<img src="img/circle.png" alt="">
+							</div>
+							<span>洁具陶瓷盆</span>
+						</li>
+						<li class="num">
+							<div>
+								<img src="img/All.png" alt="">
+								<img src="img/circle.png" alt="">
+							</div>
+							<span>其他</span>
+						</li>
+					</ul>
+				</div>
+			</td>
+		</tr>
+		
+		<tr class="condition">
+			<td>*优惠券状态</td>
+			<td>
+				<select>
+					<option value ="">有效</option>
+				</select>
+			</td>
+		</tr>
+		
+		<tr class="tr6">
+			<td>
+				<a href="FourthPage4.html" class="btn btn-success">保存</a>
+				<a class="btn btn-danger">重置</a>
+			</td>
+		</tr>
+		
+		<tr class="tr7"><td>©2015-2018 dscmail.cn  版权所有ICP备案号: DSC00000249 POWERED</td></tr>
+	</table>
+		
+</body>
+</html>
+<script>
+	
+	$(".num img").click(function(){
+		$(this).css("display","none").siblings().css("display","block")
+		console.log($(this))
+	})
+	
+	$(".sell img").click(function(){
+		$(this).css("z-index","-1").siblings().css("z-index","10")
+	})
+	
+	$(".tr6 td:last-child div:last-child .btns").click(function(){
+		$(this).addClass("btn-active").siblings().removeClass("btn-active")
+	})
+	
+	$(".tr6 a").last().click(function(){
+		$("input").val("")
+	})
+	
+</script>
